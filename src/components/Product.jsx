@@ -16,6 +16,7 @@ const Product = ({item}) => {
                 <FavoriteBorderOutlined/>
             </Icon>
          </Info>
+         <Title>{item.title}</Title>
     </Container>
   )
 }
@@ -34,6 +35,13 @@ justify-content:center;
 background:rgba(0,0,0,0.2);
 transition:all 1s ease;
 
+`
+
+const Title=styled.h3`
+position:absolute;
+top:0;
+left:0;
+color:white;
 `
 
 const Container=styled.div`
